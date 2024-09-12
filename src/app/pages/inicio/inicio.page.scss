@@ -1,0 +1,41 @@
+ion-icon{
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+ion-card {
+    color: white;
+    opacity: 0.5;
+    background: rgb(0, 0, 0);
+    margin: 10px;
+    --background: red;
+  }
+  
+  ion-card h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    transition: font-size 1.5s ease-in-out;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    ion-card {
+      --background: green;
+    }
+  }
+
+  ion-header {
+    --background: #3880ff; /* Color del encabezado */
+  }
+  
+  ion-toolbar {
+    --background: #3880ff; /* Color del toolbar */
+  }
+  
+  ion-menu {
+    --background: #ffffff; /* Color de fondo del menú */
+  }
+  
+  ion-menu-button {
+    color: white; /* Color del botón */
+  }

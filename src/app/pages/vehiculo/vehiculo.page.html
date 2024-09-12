@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>vehiculo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="box">
+    <ion-list>
+      <ion-item>
+        <ion-input [(ngModel)]="marca" label="Marca"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="modelo" label="Modelo"></ion-input>         
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="color" label="Color"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="patente" label="Patente"></ion-input>         
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="anio" label="Año"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="combustible" label="Combustible"></ion-input>         
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="capacidad" label="Capacidad"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="id" label="ID"></ion-input>         
+      </ion-item>
+    </ion-list>
+
+    <ion-button (click)="agregar()">Agregar</ion-button>
+
+  </div>
+</ion-content>

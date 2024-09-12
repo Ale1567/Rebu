@@ -8,9 +8,49 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
+    //Lo tengo que ver
     pathMatch: 'full'
+    
   },
+
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'inicio',    
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'viaje/:destino',
+    loadChildren: () => import('./pages/viaje/viaje.module').then( m => m.ViajePageModule)
+  },
+  {
+    path: 'vehiculo/:modelo',
+    loadChildren: () => import('./pages/vehiculo/vehiculo.module').then( m => m.VehiculoPageModule)
+  },  {
+    path: 'listviaje',
+    loadChildren: () => import('./listviaje/listviaje.module').then( m => m.ListviajePageModule)
+  },
+  {
+    path: 'listcar',
+    loadChildren: () => import('./pages/listcar/listcar.module').then( m => m.ListcarPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'recover',
+    loadChildren: () => import('./pages/recover/recover.module').then( m => m.RecoverPageModule)
+  },
+
+
 ];
 
 @NgModule({
