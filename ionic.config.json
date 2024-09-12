@@ -1,0 +1,7 @@
+{
+  "name": "Rebu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
